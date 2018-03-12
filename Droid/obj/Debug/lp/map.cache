@@ -1,0 +1,9 @@
+System.Runtime
+Qoden.UI
+Qoden.Util
+Qoden.Binding
+Qoden.Validation
+Qoden.Reflection
+Plugin.CurrentActivity
+Plugin.DeviceInfo.Abstractions
+Plugin.DeviceInfo

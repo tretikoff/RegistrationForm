@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+    <ItemGroup>
+        <Dependency Include="*" Package="Qoden.Binding" Version="1.5.2" />
+        <Dependency Include="*" Package="Qoden.UI" Version="1.0.0" />
+        <Dependency Include="*" Package="Qoden.Util" Project="../Qoden.Lib/Qoden.Util/Util/Qoden.Util.csproj" Version="1.1.0" />
+    </ItemGroup>
+
+
+    <Target Name="ResolveDependency" BeforeTargets="ResolveAssemblyReferences" Outputs="%(Dependency.Project)">
+        <ItemGroup>
+            <ProjectReference Include="%(Dependency.Project)" Condition="Exists('%(Dependency.Project)')"/>
+            <PackageReference Include="%(Dependency.Package)" Condition="!Exists('%(Dependency.Project)')"/>
+        </ItemGroup>
+    </Target>
+    
+    
+</Project>

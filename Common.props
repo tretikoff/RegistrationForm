@@ -1,0 +1,12 @@
+<Project>
+    <PropertyGroup>
+        <QodenUtilVersion>1.1.0</QodenUtilVersion>
+        <QodenValidationVersion>1.0.5</QodenValidationVersion>
+        <MicrosoftLoggingVersion>1.1.2</MicrosoftLoggingVersion>
+        <MicrosoftCachingVersion>1.1.2</MicrosoftCachingVersion>
+        <IdentityModelVersion>5.1.4</IdentityModelVersion>
+        <NewtonsoftJsonVersion>10.0.3</NewtonsoftJsonVersion>
+        <SerilogSinksXamarinVersion>0.1.29</SerilogSinksXamarinVersion>
+        <OxyPlotXamarinVersion>1.1.0-unstable0011</OxyPlotXamarinVersion>
+    </PropertyGroup>
+</Project>
